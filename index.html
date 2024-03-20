@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
+    <title>Encriptador de textos - ONE</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo__alura" src="img/virtual.png" alt="Logo da Alura">
+        <strong class="h1">
+        <h1>Encriptador de Textos</h1>
+        </strong>
+    </header>
+
+    <main class="area__encriptador">
+        <div class="area__escrita">
+            
+            <section class="area__texto">
+                <textarea class="area__texto__input" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+    
+                <div class="area__texto_info">
+                    <img class="texto__info__img" src="img/exclamacao.png" alt="símbolo de exclamação">
+                    <span class="texto__info">Apenas letras minúsculas e sem acento</span>
+                </div>
+    
+                <div class="area__texto__botoes">
+                    <button class="area__texto__botao__encriptar" onclick="botaoEncriptar()" >Criptografar</button>
+                    <button class="area__texto__botao__desencriptar" onclick="botaoDesencriptar()">Descriptografar</button>
+                </div>
+            </section>
+    
+        <section class="area__mensagem">
+            <textarea class="area__mensagem__output" id="msg"></textarea>
+
+            <div class="area__mensagem__inicial" id="ami">
+                <img class="area__mensagem__img" src="img/magnifying-glass.png" alt="Imagem de um meino com uma lupa no olho">
+                <h7 class="area__mensagem__titulo">Nenhuma mensagem encontrada</h7>
+                <h8 class="area__mensagem__titulo__2">Digite um texto que você deseja criptografar ou descriptografar.</h8>
+            </div>
+            <div class="area__mensagem__botao" >
+                <button class="area__mensagem__botao__copiar" id="btn-bc" onclick="copiarTexto()">Copiar</button>
+            </div>
+         </section>
+        </div>
+    </main>
+
+    <div class="line"></div>
+
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Evellyne Vitoria </p>
+        <div class="rodape__redes__sociais">
+            <a href="https://github.com/evellynee">
+                <img class="redes__sociais__logo__git" src="img/github.png" alt="Logo do Github">
+            </a>
+          
+            <a href=""></a>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

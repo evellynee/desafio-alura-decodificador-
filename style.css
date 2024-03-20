@@ -1,0 +1,335 @@
+
+:root{
+    --cor-1:#000;
+    --cor-2:#610094;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:var(--cor-1);
+    color:var(--cor-2);
+}
+
+header {
+    display: flex;
+    justify-content:center;
+    gap: 80px;
+    align-items: center;
+    font-weight: 700;
+    font-family:"Bungee Hairline", sans-serif;
+    color: var(--cor-2);
+
+}
+
+.logo__alura{
+    width: 80px;
+    padding: 50px;
+    margin-right: 300px'';
+}
+
+.area__escrita{
+    display: flex;
+    justify-content: center;
+}
+
+.area__texto__input{
+    width: 80%;
+    height: 65vh;
+    resize: none;
+    padding: 0.625rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--cor-2);
+}
+
+.area__mensagem__output{
+    width: 120%;
+    height: 75%;
+    resize: none;
+    display: none;
+    padding: 0.625rem;
+    border: none;
+    outline: none;
+    background:#080808 ;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--cor-2);
+}
+
+.area__mensagem__img{
+    width: 80px;
+}
+
+.area__mensagem__inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 120%;
+    height: 75%;
+
+    flex-direction: column;
+    background-color: #080808;
+}
+.area__texto__botoes {
+    display: flex; 
+    gap: 20px;
+}
+
+
+.area__texto_info{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.area__texto_info img{
+    width: 20px;
+}
+
+.area__texto_info span{
+    font-size: 20px;
+}
+
+.area__texto__botoes button, .area__mensagem__botao__copiar {
+    padding: 20px;
+    margin: 40px 25px ;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color:transparent;
+    font-family:"Bungee Hairline", sans-serif;
+    color:var(--cor-2);
+    font-weight: 700;
+    border: none;
+}
+
+.area__texto__botoes :hover{
+    background-color: #610094;
+    cursor: pointer;
+    color: white;
+}
+
+ .area__mensagem__botao  :hover{
+    background-color: #610094;
+    cursor: pointer;
+    color: white;
+}
+
+.area__mensagem__titulo , .area__mensagem__titulo__2{
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+.rodape{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 52px;
+    border-top: 3px solid #610094;
+}
+
+.rodape .rodape__texto{
+    margin-top: 20px;
+}
+
+.rodape img{
+    width: 35px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+@media only screen and (max-width: 390px) {
+    
+    .logo__alura{
+        margin-left: 10px;
+        padding-top: 10px;
+        width: 10%;
+    }
+
+    #principal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoBotoes{
+        height: 100%;
+        width: 65%;
+    }
+
+    .text-area{
+        height: auto;
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 5%;
+        border: none;
+        outline: none;
+        align-content: flex-start;
+        font-size: 35px;
+        font-weight: 500;
+    }
+       
+
+    #conjunto-botoes {
+        font-weight: 400;
+        margin-left: 25px;
+        
+    }
+        .informacao{
+            font-size: 12px;
+            display: flex;
+        }
+            #imagem{
+                width: 10px;
+                padding-right: 10px;
+            }
+        .botoes{
+            height: 50px;
+            width: auto;
+            padding: 0px 20px;
+            border-radius: 15px;
+            border-style: solid;
+            font-size: 15px;
+        }
+        #botao1{
+    
+            margin: 0px 5px 0px 5px;
+        }
+        #botao2{
+
+            margin: 5px;
+        }
+
+        #divSomeAparece{
+            height: auto;
+            width: 100%;
+            align-items: center;
+            border-radius: 25px;
+        }
+            #desenho{
+                width: 70%;
+            }
+
+        #mensagem{
+            height: auto;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-weight: 500;
+            align-items: center;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+            .btn-copiar{
+                height: 60px;
+                width: auto;
+                padding: 0px 20px;
+                font-size: 20px;
+                border-radius: 20px;
+                border-color: var(--cor-transparent);
+                border-style: solid;
+            }
+    
+        .rodape{
+            bottom: 0px;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+}
+@media only screen and (min-width: 391px) and (max-width: 770px) {
+
+    .logo__alura{
+        margin-left: 10px;
+        padding-top: 10px;
+        width: 10%;
+    }
+
+    .area__encriptador{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-area{
+        height: auto;
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 5%;
+        border: none;
+        outline: none;
+        align-content: flex-start;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .area__texto__botoes {
+        font-weight: 400;
+        margin-left: 25px;
+        
+    }
+        .texto__info{
+            font-size: 12px;
+            display: flex
+        }
+        .texto__info__img{
+                width: 10px;
+                padding-right: 5px;
+            }
+        .botoes{
+            height: 50px;
+            width: auto;
+            padding: 0px 20px;
+            border-radius: 15px;
+            border-style: solid;
+            font-size: 15px;
+        }
+        .area__texto__botao__encriptar{
+            margin: 0px 5px 0px 5px;
+        }
+        .area__texto__botao__desencriptar{
+            margin: 5px;
+        }
+
+        .area__mensagem__inicial{
+            height: 80%;
+            width: 100%;
+            align-items: center;
+            border-radius: 25px;
+        }
+            .area__mensagem__img{
+                width: 30%;
+            }
+
+        .area__mensagem__titulo , .area__mensagem__titulo__2{
+            height: auto;
+            width: 80%;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            align-items: center;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+            .area__mensagem__botao__copiar{
+                height: 60px;
+                width: auto;
+                padding: 0px 20px;
+                font-size: 20px;
+                border-radius: 20px;
+                border-style: solid;
+            }
+    
+        .rodape{
+            bottom: 0px;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+}
